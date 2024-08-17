@@ -1,0 +1,40 @@
+# Arquivos de build
+build/
+dist/
+
+# Dependências instaladas
+node_modules/
+
+# Arquivos de cache e logs
+*.log
+npm-debug.log*
+
+# Arquivos temporários
+.tmp/
+.temp/
+*.tmp
+*.temp
+
+# Outros arquivos e diretórios específicos do seu ambiente ou ferramentas
+.DS_Store
+.env
+.env.local
+.env.*.local
+
+# Arquivos de configuração específicos do editor (por exemplo, VSCode)
+.vscode/
+
+# Arquivos de backup
+*~
+
+# Arquivos de credenciais (não versionar credenciais!)
+*.pem
+*.key
+*.cer
+*.crt
+*.p12
+*.pfx
+
+# Outros arquivos específicos do seu projeto ou ferramentas utilizadas
+
+.next/
