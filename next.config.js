@@ -12,8 +12,9 @@ const nextConfig = {
       {
         protocol: 'http',
         hostname: 'admin.guialagamar.com.br',
-        port: '',
         pathname: '/storage/**',
+        port: '',
+
       },
       // Você pode adicionar outras configurações de domínios e subdomínios aqui, se necessário
     ],
