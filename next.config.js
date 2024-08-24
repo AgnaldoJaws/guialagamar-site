@@ -4,11 +4,18 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: process.env.NEXT_PUBLIC_API_PROTOCOL,
-        hostname: process.env.NEXT_PUBLIC_API_HOSTNAME,
-        port: process.env.NEXT_PUBLIC_API_PORT,
-        pathname: process.env.NEXT_PUBLIC_API_PATHNAME,
+        protocol: process.env.NEXT_PUBLIC_API_PROTOCOL || 'http',
+        hostname: process.env.NEXT_PUBLIC_API_HOSTNAME || 'admin.guialagamar.com.br',
+        port: process.env.NEXT_PUBLIC_API_PORT || '',
+        pathname: process.env.NEXT_PUBLIC_API_PATHNAME || '/storage/**',
       },
+      {
+        protocol: 'http',
+        hostname: 'admin.guialagamar.com.br',
+        port: '',
+        pathname: '/storage/**',
+      },
+      // Você pode adicionar outras configurações de domínios e subdomínios aqui, se necessário
     ],
   },
 };
