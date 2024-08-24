@@ -1129,16 +1129,16 @@ $_displays: none, inline-block, block, flex;
     .icon {
       color: white;
       stroke-width: 1;
-      width: rem(28px);
-      height: rem(28px);
+      //width: rem(28px);
+      //height: rem(28px);
     }
 
     &.-bottom-right {
       top: unset;
       left: unset;
       transform: unset;
-      bottom: rem(30px);
-      right: rem(30px);
+      //bottom: rem(30px);
+      //right: rem(30px);
     }
   }
 }
