@@ -3,8 +3,10 @@ import Link from "next/link";
 import Slider from "react-slick";
 import { hotelsData } from "../../data/hotels";
 import isTextMatched from "../../utils/isTextMatched";
+import {useState} from "react";
 
 const Hotels2 = () => {
+
   var settings = {
     dots: true,
     infinite: true,
@@ -103,11 +105,6 @@ const Hotels2 = () => {
                     ))}
                   </Slider>
 
-                  <div className="cardImage__wishlist">
-                    <button className="button -blue-1 bg-white size-30 rounded-full shadow-2">
-                      <i className="icon-heart text-12" />
-                    </button>
-                  </div>
 
                   <div className="cardImage__leftBadge">
                     <div

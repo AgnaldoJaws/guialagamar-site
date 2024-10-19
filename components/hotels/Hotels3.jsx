@@ -131,12 +131,12 @@ const Hotels3 = () => {
         ))}
       </Swiper>
 
-      <button className="section-slider-nav -prev flex-center button -blue-1 bg-white shadow-1 size-40 rounded-full sm:d-none js-filter2-prev">
-        <i className="icon icon-chevron-left text-12" />
-      </button>
-      <button className="section-slider-nav -next flex-center button -blue-1 bg-white shadow-1 size-40 rounded-full sm:d-none js-filter2-next">
-        <i className="icon icon-chevron-right text-12" />
-      </button>
+      {/*<button className="section-slider-nav -prev flex-center button -blue-1 bg-white shadow-1 size-40 rounded-full sm:d-none js-filter2-prev">*/}
+      {/*  <i className="icon icon-chevron-left text-12" />*/}
+      {/*</button>*/}
+      {/*<button className="section-slider-nav -next flex-center button -blue-1 bg-white shadow-1 size-40 rounded-full sm:d-none js-filter2-next">*/}
+      {/*  <i className="icon icon-chevron-right text-12" />*/}
+      {/*</button>*/}
     </>
   );
 };

@@ -60,9 +60,9 @@ const PopularDestinations = () => {
                   <div className="text-14 text-white">{item.hoverText}</div>
                 </div>
                 <div className="citiesCard__bottom">
-                  <h4 className="text-26 md:text-20 lh-13 text-white mb-20">
+                  <h1 className="text-26 md:text-20 lh-13 text-white mb-20">
                     {item.city}
-                  </h4>
+                  </h1>
                   <Link className="button col-12 h-60 -blue-1 bg-white text-dark-1" href={`hotel/hotel-list-v4/${item.cityId}`}>
                     Conhecer
                   </Link>
@@ -73,15 +73,15 @@ const PopularDestinations = () => {
         ))}
       </Swiper>
 
-      <div>
-        <button className="section-slider-nav  -prev flex-center button -blue-1 bg-white shadow-1 size-40 rounded-full sm:d-none js-destination-prev">
-          <i className="icon icon-chevron-left text-12" />
-        </button>
-        <button className="section-slider-nav -next flex-center button -blue-1 bg-white shadow-1 size-40 rounded-full sm:d-none js-destination-next">
-          <i className="icon icon-chevron-right text-12" />
-        </button>
-        <div className="slider-scrollbar bg-light-2 mt-40  js-popular-destination-scrollbar" />
-      </div>
+      {/*<div>*/}
+      {/*  <button className="section-slider-nav  -prev flex-center button -blue-1 bg-white shadow-1 size-40 rounded-full sm:d-none js-destination-prev">*/}
+      {/*    <i className="icon icon-chevron-left text-12" />*/}
+      {/*  </button>*/}
+      {/*  <button className="section-slider-nav -next flex-center button -blue-1 bg-white shadow-1 size-40 rounded-full sm:d-none js-destination-next">*/}
+      {/*    <i className="icon icon-chevron-right text-12" />*/}
+      {/*  </button>*/}
+      {/*  <div className="slider-scrollbar bg-light-2 mt-40  js-popular-destination-scrollbar" />*/}
+      {/*</div>*/}
     </>
   );
 };
