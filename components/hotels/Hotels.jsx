@@ -52,7 +52,7 @@ const Hotels = () => {
             }}
         >
           {dataHome.map((item) => {
-            console.log(item.logoPath);
+
             return (
                 <SwiperSlide key={item?.id}>
                   <Link
@@ -61,8 +61,8 @@ const Hotels = () => {
                       data-aos="fade"
                       data-aos-delay={item.delayAnimation}
                   >
-                    <div className="hotelsCard__image">
-                      <div className="cardImage ratio ratio-1:1">
+                    <div className="hotelsCard__image" style={{ height:200 }}>
+                      <div className="cardImage ratio ratio-1:1 ">
                         <div className="cardImage__content">
                           <div className="cardImage-slider rounded-4 overflow-hidden custom_inside-slider">
                             <Swiper
