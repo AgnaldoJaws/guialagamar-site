@@ -67,11 +67,6 @@ const HotelProperties = ({ data }) => {
                   />
                 </Slider>
 
-                <div className="cardImage__wishlist">
-                  <button className="button -blue-1 bg-white size-30 rounded-full shadow-2">
-                    <i className="icon-heart text-12" />
-                  </button>
-                </div>
 
                 <div className="cardImage__leftBadge">
                   <div
@@ -101,9 +96,9 @@ const HotelProperties = ({ data }) => {
               </div>
             </div>
             <div className="hotelsCard__content mt-10">
-              <h4 className="hotelsCard__title text-dark-1 text-18 lh-16 fw-500">
+              <h1 className="hotelsCard__title text-dark-1 text-18 lh-16 fw-500">
                 <span>{item?.title}</span>
-              </h4>
+              </h1>
               <p className="text-light-1 lh-14 text-14 mt-5">
                 {item?.forma_acesso}
               </p>

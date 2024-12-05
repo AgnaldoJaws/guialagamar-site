@@ -59,12 +59,12 @@ const Travellers = () => {
         ))}
       </Swiper>
 
-      <button className="section-slider-nav -prev flex-center button -blue-1 bg-white shadow-1 size-40 rounded-full sm:d-none dtl-prev-active">
-        <i className="icon icon-chevron-left text-12" />
-      </button>
-      <button className="section-slider-nav -next flex-center button -blue-1 bg-white shadow-1 size-40 rounded-full sm:d-none dtl-next-active">
-        <i className="icon icon-chevron-right text-12" />
-      </button>
+      {/*<button className="section-slider-nav -prev flex-center button -blue-1 bg-white shadow-1 size-40 rounded-full sm:d-none dtl-prev-active">*/}
+      {/*  <i className="icon icon-chevron-left text-12" />*/}
+      {/*</button>*/}
+      {/*<button className="section-slider-nav -next flex-center button -blue-1 bg-white shadow-1 size-40 rounded-full sm:d-none dtl-next-active">*/}
+      {/*  <i className="icon icon-chevron-right text-12" />*/}
+      {/*</button>*/}
     </>
   );
 };

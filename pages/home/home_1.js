@@ -13,6 +13,7 @@ import Testimonial from "../../components/home/home-1/Testimonial";
 import TestimonialLeftCol from "../../components/home/home-1/TestimonialLeftCol";
 import Hotels from "../../components/hotels/Hotels";
 import SelectFilter from "../../components/hotels/filter-tabs/SelectFilter";
+import Recommend from "../../components/recommend/Recommend";
 
 const Home_1 = () => {
   return (
@@ -93,6 +94,28 @@ const Home_1 = () => {
           {/* End relative */}
         </div>
       </section>
+
+        <section className="layout-pt-md layout-pb-md">
+            <div className="container">
+                <div className="row y-gap-10 justify-between items-end">
+                    <div className="col-auto">
+                        <div className="sectionTitle -md">
+                            <h2 className="sectionTitle__title">Recomendamos </h2>
+
+                        </div>
+                    </div>
+                    {/*<div className="col-sm-auto">*/}
+                    {/*  <SelectFilter />*/}
+                    {/*</div>*/}
+                </div>
+                {/* End .row */}
+
+                <div className="relative overflow-hidden pt-40 sm:pt-20 js-section-slider item_gap-x30">
+                    <Recommend />
+                </div>
+                {/* End relative */}
+            </div>
+        </section>
       {/* Recommended Properties */}
 
       {/*<section className="layout-pt-md layout-pb-lg">*/}
@@ -174,7 +197,7 @@ const Home_1 = () => {
       {/*</section>*/}
       {/* End Destination we love Section */}
 
-      {/*<CallToActions />*/}
+      <CallToActions />
       {/* End Call To Actions Section */}
 
       <DefaultFooter />

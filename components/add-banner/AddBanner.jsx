@@ -55,7 +55,7 @@ const AddBanner = () => {
                 ""
               )}
 
-              <h4 className="text-40 lg:text-26 text-white">{item.title}</h4>
+              <h1 className="text-40 lg:text-26 text-white">{item.title}</h1>
               <div className="d-inline-block mt-30">
                 <Link
                   href={item.routerPath}
