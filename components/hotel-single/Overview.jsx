@@ -1,24 +1,30 @@
-const Overview = ({data}) => {
-  return (
-    <>
-      {/*<h3 className="text-22 fw-500 pt-40 border-top-light">Overview</h3>*/}
-      <p className="text-dark-1 text-15 mt-20">
-          {data && data.post?.content}
-      </p>
+import { marked } from 'marked';
+import DOMPurify from 'dompurify';
 
-        <p className="text-dark-1 text-15 mt-20">
-            {data && data.post?.references}
-        </p>
+const Overview = ({ data }) => {
+    const parseMarkdown = (markdown) => {
+        if (!markdown) return '';
+        const rawHtml = marked.parse(markdown);
+        return DOMPurify.sanitize(rawHtml);
+    };
+
+    return (
+        <div className="prose max-w-none text-dark-1 prose-headings:text-inherit prose-p:text-inherit prose-li:text-inherit prose-strong:text-inherit prose-em:text-inherit prose-a:text-inherit text-15 mt-20">
+            {data?.post?.content && (
+                <div
+                    dangerouslySetInnerHTML={{ __html: parseMarkdown(data.post.content) }}
+                />
+            )}
+
+            {data?.post?.references && (
+                <div
+                    dangerouslySetInnerHTML={{ __html: parseMarkdown(data.post.references) }}
+                />
+            )}
+        </div>
+    );
 
 
-      {/*<a*/}
-      {/*  href="#"*/}
-      {/*  className="d-block text-14 text-blue-1 fw-500 underline mt-10"*/}
-      {/*>*/}
-      {/*  Show More*/}
-      {/*</a>*/}
-    </>
-  );
 };
 
 export default Overview;

@@ -83,11 +83,11 @@ const HotelSingleV1Dynamic = () => {
                     <h1 className="text-30 sm:text-25 fw-600">{hotel && hotel.post?.title}</h1>
 
                   </div>
-                  {/*<div className="col-auto">*/}
-                  {/*  {[...Array(5)].map((_, id) => (*/}
-                  {/*      <i key={id} className="icon-star text-10 text-yellow-1" />*/}
-                  {/*  ))}*/}
-                  {/*</div>*/}
+                  <div className="col-auto">
+                    {[...Array(5)].map((_, id) => (
+                        <i key={id} className="icon-star text-10 text-yellow-1" />
+                    ))}
+                  </div>
                 </div>
                 <div className="row x-gap-20 y-gap-20 items-center">
                   <div className="col-auto">
@@ -236,6 +236,7 @@ const HotelSingleV1Dynamic = () => {
           <div className="container">
             <div className="row y-gap-30">
               <div className="col-xl-8">
+
                 <div className="row y-gap-40">
                   {/*<div className="col-12">*/}
                   {/*  <h3 className="text-22 fw-500">Property highlights</h3>*/}
